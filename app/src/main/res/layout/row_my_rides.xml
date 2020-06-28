@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom = "16dp"
+    android:background="@drawable/shape_login_input"
+    android:padding="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+ <de.hdodenhof.circleimageview.CircleImageView
+     android:id="@+id/circularImageView_user_image"
+     android:layout_width="40dp"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent"
+     android:layout_height="40dp"
+     android:src="@drawable/ic_user_i_image"/>
+    <TextView
+        android:id="@+id/textView_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Akshansh Singh Gusain"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="8dp"
+        android:textSize="12sp"
+        android:textColor="@color/colorBlack"
+        android:fontFamily="@font/gilroy_medium"
+        app:layout_constraintStart_toEndOf="@+id/circularImageView_user_image"
+        app:layout_constraintTop_toTopOf="@+id/circularImageView_user_image"/>
+
+    <TextView
+        android:id="@+id/textView_user2_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paid: $ 12.90"
+        android:textSize="10sp"
+        android:fontFamily="@font/gilroy_medium"
+        app:layout_constraintStart_toStartOf="@+id/textView_name"
+        app:layout_constraintTop_toBottomOf="@+id/textView_name"/>
+
+    <TextView
+        android:id="@+id/textView_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12/02/2020, 7:00 PM"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="8dp"
+        android:textSize="10sp"
+        android:fontFamily="@font/gilroy_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/textView_total_fair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$ 32.90"
+        android:textSize="12sp"
+        android:textColor="@color/colorBlack"
+        android:fontFamily="@font/gilroy_medium"
+        app:layout_constraintEnd_toEndOf="@+id/textView_date"
+        app:layout_constraintTop_toBottomOf="@+id/textView_date"/>
+
+<LinearLayout
+    android:id="@+id/linearLayout_start_location"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@+id/circularImageView_user_image"
+    app:layout_constraintStart_toStartOf="@+id/circularImageView_user_image"
+    app:layout_constraintEnd_toEndOf="@+id/textView_total_fair"
+    android:gravity="center"
+    android:layout_marginTop="8dp">
+    <ImageView
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:src="@drawable/ic_dot"
+        android:layout_marginEnd="16dp"/>
+
+    <TextView
+        android:id="@+id/textView_start_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Indira Gandhi International Airport New Delhi, Delhi 110037"
+        android:singleLine="true"
+        android:textSize="12sp"
+        android:fontFamily="@font/gilroy_medium" />
+
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_end_location_user_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout_start_location"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout_start_location"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout_start_location"
+        android:gravity="center"
+        android:layout_marginTop="8dp">
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/ic_pin_grey"
+            android:layout_marginEnd="16dp"/>
+
+        <TextView
+            android:id="@+id/textView_end_location_user_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User 2 : Sector 16, Noida, Uttar Pradesh 201301."
+            android:singleLine="true"
+            android:textSize="12sp"
+            android:fontFamily="@font/gilroy_medium" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_end_location_user_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout_end_location_user_2"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout_end_location_user_2"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout_end_location_user_2"
+        android:gravity="center"
+        android:layout_marginTop="8dp">
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/ic_map_location"
+            android:layout_marginEnd="16dp"/>
+
+        <TextView
+            android:id="@+id/textView_end_location_user_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="D-149, 2nd Floor, Block D, Sector 10, Noida, Uttar Pradesh 201301"
+            android:singleLine="true"
+            android:textSize="12sp"
+            android:fontFamily="@font/gilroy_medium" />
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

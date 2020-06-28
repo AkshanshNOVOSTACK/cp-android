@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginModule.Login_Enter_MobileNoActivity">
+
+    <ImageView
+        android:id="@+id/imageView_back"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_arrow_back_black_24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_back">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/gilroy_bold"
+            android:gravity="bottom|center"
+            android:paddingStart="40dp"
+            android:paddingEnd="40dp"
+            android:text="@string/login_enter_mobilenumber_h1"
+            android:textColor="#000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/gilroy_medium"
+            android:gravity="bottom|center"
+            android:paddingStart="65dp"
+            android:paddingEnd="65dp"
+            android:text="@string/login_enter_mobilenumber_h2"
+            android:textColor="@color/subHeadingColor" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/gilroy_medium"
+            android:gravity="top|center"
+            android:paddingStart="115dp"
+            android:paddingEnd="115dp"
+            android:text="@string/login_enter_mobilenumber_h3"
+            android:textColor="@color/subHeadingColor" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_phonenumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout_heading">
+
+        <ImageView
+            android:id="@+id/imageView_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/india_flag" />
+
+        <TextView
+            android:id="@+id/textView_country_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/gilroy_medium"
+            android:text="+91"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editText_phoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:background="@null"
+            android:fontFamily="@font/gilroy_medium"
+            android:hint="@string/login_hint1"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@color/subHeadingColor"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout_phonenumber"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout_phonenumber"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout_phonenumber" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout_proceed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="32dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25sp"
+            android:text="@string/login_tnc0"
+            android:textAlignment="center"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp"
+            android:textColor="@color/subHeadingColor"
+            android:fontFamily="@font/gilroy_medium"
+            android:autoSizeTextType="uniform"
+            android:gravity="bottom"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25sp"
+            android:text="@string/login_tnc2"
+            android:textAlignment="center"
+            android:paddingStart="110dp"
+            android:paddingEnd="110dp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/gilroy_medium"
+            android:textColor="@color/subHeadingColor"
+            android:gravity="top"/>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:background="@drawable/shape_login_circle"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout_proceed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_disabled_send"
+            tools:layout_editor_absoluteX="180dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteY="491dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

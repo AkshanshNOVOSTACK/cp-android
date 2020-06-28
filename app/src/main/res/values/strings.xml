@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">CP-Android</string>
+    <string name="login_h1">Secure, Safe and Easy</string>
+    <string name="login_h2">Car Pooling has never been so easy before.</string>
+    <string name="login_h3_1">Join </string>
+    <string name="login_h3_2">Million</string>
+    <string name="login_h3_3">other Riders</string>
+    <string name="login_hint1">ENTER YOUR MOBILE NUMBER</string>
+    <string name="login_or_connect_with">or connect with</string>
+    <string name="login_enter_mobilenumber_h1">ENTER YOUR MOBILE NUMBER</string>
+    <string name="login_enter_mobilenumber_h2">Verification code and ride related details</string>
+    <string name="login_enter_mobilenumber_h3">will be sent to this number</string>
+
+    <string name="login_tnc2">SMS and Data rates may apply.</string>
+    <string name="login_tnc0"><![CDATA[By Proceeding you are agreeing to our terms & conditions]]></string>
+    <string name="login_error_1">Enter your mobile number</string>
+    <string name="login_otp_verfication_h1">OTP VERIFICATION</string>
+    <string name="login_otp_verfication_sh1">Please wait while we auto verify the OTP</string>
+    <string name="login_otp_verfication_sh2">sent to</string>
+    <string name="login_otp_verfication_sh3">+91-858 333 3453</string>
+    <string name="login_otp_verfication_resend">Resend OTP</string>
+    <string name="login_otp_verification_button">next</string>
+    <string name="login_otp_verfication_didnot_receive_otp">Didn\'t Receive the OTP?</string>
+    <string name="appbar_title_edit_profile">Edit Profile</string>
+    <string name="editProfile_first_name">First Name</string>
+    <string name="editProfile_hint_first_name">Enter your First Name here</string>
+    <string name="editProfile_last_name">Last Name</string>
+    <string name="editProfile_phone_number">Mobile Number</string>
+    <string name="editProfile_hint_mobileNumber">989-887-1128</string>
+    <string name="editProfile_email">Email</string>
+    <string name="editProfile_hint_email">akshansh@novostack.com</string>
+    <string name="appbar_title_settings">Settings</string>
+    <string name="settings_editProfile">Edit Profile</string>
+    <string name="settings_user_name">Akshansh Gusain</string>
+    <string name="settings_user_email">akshansh.gusain@novostack.com</string>
+    <string name="settings_phone">9898871128</string>
+    <string name="settings_settingsBlock_safety">Safety</string>
+    <string name="settings_settingsBlock_safety_desc">Control your safety settings, including Ride Check notifications</string>
+    <string name="settings_settingsBlock_privacySettings_desc">Manage the data you share with us</string>
+    <string name="settings_settingsBlock_privacySettings">Privacy Settings</string>
+    <string name="settings_settingsBlock_security">Security</string>
+    <string name="settings_settingsBlock_secutiry_desc">Control your account security with 2-step verification</string>
+    <string name="settings_signout">Sign Out</string>
+    <string name="appbar_title_myRides">My Rides</string>
+    <string name="appbar_title_ride_details">Ride Details</string>
+    <string name="appbar_title_report">Reason for report</string>
+</resources>

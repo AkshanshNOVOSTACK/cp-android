@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#18a0fb</color>
+    <color name="colorPrimaryDark">#18a0fb</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorFieldStroke">#D2D2D2</color>
+    <color name="colorWhite">#fff</color>
+
+    <color name= "subHeadingColor">#909090</color>
+
+    <color name= "colorBlack">#000000</color>
+
+    <color name= "colorHighlights">#efefef</color>
+    <color name= "colorLinkText">#18a0fb</color>
+    
+    <color name="colorBorder">#e3e3e3</color>
+    <color name="colorSettingsDetails">#a1a1a1</color>
+    <color name="colorRed">#ca000f</color>
+
+</resources>
